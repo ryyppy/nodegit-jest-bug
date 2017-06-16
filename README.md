@@ -33,11 +33,13 @@ you repeat the test in the same watcher instance you will get following error:
 I poked around in the `promisify-node` source code and realized that at some
 point, `nodegit` tries to promisify an (maybe already promisified?) object:
 
+```
 console.log node_modules/promisify-node/index.js:43
   { [Function]
     cherrypick: [Circular],
     commit: [Function],
     initOptions: [Function] }
+```
 
 On the first run, the cherrypick function is just `[Function]`.
 Maybe that's an issue with module caching?
