@@ -1,0 +1,16 @@
+{
+  "name": "nodegit-debug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^20.0.4",
+    "nodegit": "^0.18.3"
+  }
+}
